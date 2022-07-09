@@ -1,17 +1,21 @@
 //
-//  WorldTravelAppApp.swift
+//  WorldTravelApp.swift
 //  WorldTravelApp
 //
-//  Created by luane Niejelski on 7/9/22.
+//  Created by luane Niejelski.
 //
 
 import SwiftUI
 
 @main
 struct WorldTravelAppApp: App {
+    
+@StateObject private var vm = LocationsViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LocationsView()
+                .environmentObject(vm)
         }
     }
 }
