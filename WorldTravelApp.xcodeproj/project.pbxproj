@@ -44,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				6BB220602879D1FF0005B7FA /* WorldTravelAppApp.swift */,
+				6BB220622879D1FF0005B7FA /* ContentView.swift */,
 				6BB220752879D8C10005B7FA /* DataServices */,
 				6BB220722879D7AB0005B7FA /* ViewModels */,
 				6BB220712879D7A40005B7FA /* Views */,
@@ -82,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				6BB220732879D7D50005B7FA /* Location.swift */,
-				6BB220782879DB040005B7FA /* LocationsView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,7 +90,7 @@
 		6BB220712879D7A40005B7FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6BB220622879D1FF0005B7FA /* ContentView.swift */,
+				6BB220782879DB040005B7FA /* LocationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
