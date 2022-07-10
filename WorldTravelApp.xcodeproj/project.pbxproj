@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B05E090287B45D600AB8B5C /* ItemListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B05E08F287B45D600AB8B5C /* ItemListModel.swift */; };
+		6B05E092287B4BDC00AB8B5C /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B05E091287B4BDC00AB8B5C /* ListViewModel.swift */; };
+		6B9CC67E287B27010003EE1A /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9CC67D287B27010003EE1A /* ToDoListView.swift */; };
+		6B9CC682287B2EB70003EE1A /* ToDoListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9CC681287B2EB70003EE1A /* ToDoListRowView.swift */; };
 		6BB220612879D1FF0005B7FA /* WorldTravelAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB220602879D1FF0005B7FA /* WorldTravelAppApp.swift */; };
 		6BB220632879D1FF0005B7FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB220622879D1FF0005B7FA /* ContentView.swift */; };
 		6BB220682879D2010005B7FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB220672879D2010005B7FA /* Preview Assets.xcassets */; };
@@ -19,10 +23,15 @@
 		6BB2207F2879F2000005B7FA /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2207E2879F2000005B7FA /* LocationPreviewView.swift */; };
 		6BB22081287A093A0005B7FA /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB22080287A093A0005B7FA /* LocationMapAnnotationView.swift */; };
 		6BB22083287A13FE0005B7FA /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB22082287A13FE0005B7FA /* LocationDetailView.swift */; };
+		6BE3951B287B3AB300F42601 /* AddViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3951A287B3AB300F42601 /* AddViewList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B05E08F287B45D600AB8B5C /* ItemListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListModel.swift; sourceTree = "<group>"; };
+		6B05E091287B4BDC00AB8B5C /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		6B9CC67C287A4BCD0003EE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6B9CC67D287B27010003EE1A /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		6B9CC681287B2EB70003EE1A /* ToDoListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListRowView.swift; sourceTree = "<group>"; };
 		6BB2205D2879D1FF0005B7FA /* WorldTravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB220602879D1FF0005B7FA /* WorldTravelAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTravelAppApp.swift; sourceTree = "<group>"; };
 		6BB220622879D1FF0005B7FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +45,7 @@
 		6BB2207E2879F2000005B7FA /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		6BB22080287A093A0005B7FA /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
 		6BB22082287A13FE0005B7FA /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		6BE3951A287B3AB300F42601 /* AddViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				6BB220732879D7D50005B7FA /* Location.swift */,
+				6B05E08F287B45D600AB8B5C /* ItemListModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,6 +116,9 @@
 				6BB2207E2879F2000005B7FA /* LocationPreviewView.swift */,
 				6BB22080287A093A0005B7FA /* LocationMapAnnotationView.swift */,
 				6BB22082287A13FE0005B7FA /* LocationDetailView.swift */,
+				6B9CC67D287B27010003EE1A /* ToDoListView.swift */,
+				6B9CC681287B2EB70003EE1A /* ToDoListRowView.swift */,
+				6BE3951A287B3AB300F42601 /* AddViewList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				6BB2207A2879DFA70005B7FA /* LocationsViewModel.swift */,
+				6B05E091287B4BDC00AB8B5C /* ListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -196,15 +211,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BB220772879D9110005B7FA /* LocationsDataService.swift in Sources */,
+				6BE3951B287B3AB300F42601 /* AddViewList.swift in Sources */,
 				6BB22081287A093A0005B7FA /* LocationMapAnnotationView.swift in Sources */,
 				6BB2207D2879E89B0005B7FA /* LocationsListView.swift in Sources */,
 				6BB2207F2879F2000005B7FA /* LocationPreviewView.swift in Sources */,
+				6B05E092287B4BDC00AB8B5C /* ListViewModel.swift in Sources */,
 				6BB2207B2879DFA70005B7FA /* LocationsViewModel.swift in Sources */,
 				6BB220632879D1FF0005B7FA /* ContentView.swift in Sources */,
 				6BB220792879DB040005B7FA /* LocationsView.swift in Sources */,
+				6B9CC67E287B27010003EE1A /* ToDoListView.swift in Sources */,
 				6BB220742879D7D50005B7FA /* Location.swift in Sources */,
+				6B05E090287B45D600AB8B5C /* ItemListModel.swift in Sources */,
 				6BB22083287A13FE0005B7FA /* LocationDetailView.swift in Sources */,
 				6BB220612879D1FF0005B7FA /* WorldTravelAppApp.swift in Sources */,
+				6B9CC682287B2EB70003EE1A /* ToDoListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

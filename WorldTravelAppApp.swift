@@ -10,12 +10,19 @@ import SwiftUI
 @main
 struct WorldTravelAppApp: App {
     
-@StateObject private var vm = LocationsViewModel()
+    @StateObject private var vm = LocationsViewModel()
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
     
     var body: some Scene {
         WindowGroup {
-            LocationsView()
-                .environmentObject(vm)
+            NavigationView {
+                ToDoListView()
+            }
+            .environmentObject(listViewModel)
+               LocationsView()
+            .environmentObject(vm)
+            
+            }
         }
     }
-}
+
