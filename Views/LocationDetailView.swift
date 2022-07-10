@@ -52,7 +52,7 @@ extension LocationDetailView {
                     Image($0)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: UIScreen.main.bounds.width)
+                    .frame(width: UIDevice.current.userInterfaceIdiom == .pad ? nil : UIScreen.main.bounds.width)
                     .clipped()
                 }
             }
@@ -65,6 +65,7 @@ extension LocationDetailView {
             Text(location.name)
                 .font(.largeTitle)
                 .fontWeight(.semibold)
+                .foregroundColor(.primary)
             Text(location.cityName)
                 .font(.title3)
                 .foregroundColor(.secondary)
@@ -74,12 +75,9 @@ extension LocationDetailView {
         VStack(alignment: .leading, spacing: 16) {
             Text(location.description)
                 .font(.subheadline)
-            foregroundColor(.secondary)
+                .foregroundColor(.secondary)
                 
-//            Text(location.cityName)
-//                .font(.title3)
-//                .foregroundColor(.secondary)
-    if let url = URL(string: location.link) {
+  if let url = URL(string: location.link) {
     Link("Read more on Wikipedia", destination: url)
             .font(.headline)
             .tint(.blue)
