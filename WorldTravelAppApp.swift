@@ -19,7 +19,7 @@ struct WorldTravelAppApp: App {
                 ToDoListView()
             }
             .environmentObject(listViewModel)
-               LocationsView()
+//               LocationsView()
             .environmentObject(vm)
             
             }
