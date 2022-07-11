@@ -15,13 +15,10 @@ struct WorldTravelAppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ToDoListView()
-            }
+            WorldTravelTabView()
             .environmentObject(listViewModel)
-//               LocationsView()
             .environmentObject(vm)
-            
+               
             }
         }
     }
